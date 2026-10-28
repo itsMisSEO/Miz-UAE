@@ -1,0 +1,21 @@
+{{- $home := site.Home.Permalink -}}
+{{- $graph := slice -}}
+{{- $graph = $graph | append (dict "@type" "WebSite" "@id" (printf "%s#website" $home) "url" $home "name" site.Params.siteName "inLanguage" site.Language.Locale "publisher" (dict "@id" (printf "%s#org" (absURL "")))) -}}
+{{- $graph = $graph | append (dict "@type" "Organization" "@id" (printf "%s#org" (absURL "")) "name" site.Params.siteName "url" (absURL "") "logo" (absURL (strings.TrimPrefix "/" site.Params.logo))) -}}
+{{- $author := index hugo.Data.authors (.Params.author | default "omar") -}}
+{{- $person := dict "@type" "Person" "@id" (printf "%s#author" (absURL (strings.TrimPrefix "/" $author.url))) "name" $author.name "url" (absURL (strings.TrimPrefix "/" $author.url)) "jobTitle" (i18n "author_role") -}}
+{{- $graph = $graph | append $person -}}
+{{- $graph = $graph | append (dict "@type" "WebPage" "@id" (printf "%s#webpage" .Permalink) "url" .Permalink "name" .Title "description" .Description "inLanguage" site.Language.Locale "isPartOf" (dict "@id" (printf "%s#website" $home)) "primaryImageOfPage" (absURL (strings.TrimPrefix "/" site.Params.ogImage)) "datePublished" (.Date.Format "2006-01-02") "dateModified" (.Lastmod.Format "2006-01-02") "author" (dict "@id" (printf "%s#author" (absURL (strings.TrimPrefix "/" $author.url))))) -}}
+{{- if .IsHome -}}
+  {{- $items := slice -}}
+  {{- range $i, $b := hugo.Data.brands -}}
+    {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "name" $b.name "url" (absURL (partial "url.html" $b.slug))) -}}
+  {{- end -}}
+  {{- $graph = $graph | append (dict "@type" "ItemList" "name" (i18n "top_label") "itemListElement" $items) -}}
+{{- end -}}
+{{- with .Params.faq -}}
+  {{- $qs := slice -}}
+  {{- range . -}}{{- $qs = $qs | append (dict "@type" "Question" "name" .q "acceptedAnswer" (dict "@type" "Answer" "text" .a)) -}}{{- end -}}
+  {{- $graph = $graph | append (dict "@type" "FAQPage" "mainEntity" $qs) -}}
+{{- end -}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>

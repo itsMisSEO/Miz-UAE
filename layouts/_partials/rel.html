@@ -1,0 +1,2 @@
+{{- /* путь из данных ("/images/x.png") → с учётом подпапки baseURL (нужно для адреса github.io/Miz-UAE/) */ -}}
+{{- return (relURL (strings.TrimPrefix "/" .)) -}}

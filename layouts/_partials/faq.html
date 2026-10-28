@@ -1,0 +1,11 @@
+{{ with .Params.faq }}
+<section class="faq" id="faq">
+  <h2>{{ i18n "faq" }}</h2>
+  {{ range $i, $f := . }}
+  <details class="faq__item"{{ if eq $i 0 }} open{{ end }}>
+    <summary>{{ $f.q }}</summary>
+    <div class="faq__a"><p>{{ $f.a }}</p></div>
+  </details>
+  {{ end }}
+</section>
+{{ end }}

@@ -1,0 +1,52 @@
+baseURL = "https://miz-uae.com/"
+title = "Miz UAE"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  siteName = "Miz UAE"
+  logo = "/images/logo-1pwpvkin3xzhiw6zhwrctbhmyvv0ns5-f.png"
+  favicon = "/images/favicon-1wnkiy7furevo-tdlfaxy8ghciruqxmac.png"
+  ogImage = "/images/banner.webp"
+  heroImage = "/images/banner.webp"
+  trustpilotVerification = "3959b82a-d10f-4117-929d-6d3a39960b82"
+  trustpilotUrl = "https://www.trustpilot.com/review/miz-uae.com"
+
+[languages]
+  [languages.en]
+    label = "English"
+    locale = "en"
+    weight = 1
+  [languages.ar]
+    label = "العربية"
+    locale = "ar"
+    direction = "rtl"
+    weight = 2
+  [languages.hi]
+    label = "हिन्दी"
+    locale = "hi"
+    weight = 3
+  [languages.ur]
+    label = "اردو"
+    locale = "ur"
+    direction = "rtl"
+    weight = 4
+  [languages.ru]
+    label = "Русский"
+    locale = "ru"
+    weight = 5
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 2
+
+[sitemap]
+  changeFreq = "weekly"
+
+[minify]
+  minifyOutput = true

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}" dir="{{ or site.Language.Direction "ltr" }}">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body class="lang-{{ site.Language.Lang }}">
+{{ partial "header.html" . }}
+<main id="main">
+{{ block "main" . }}{{ end }}
+</main>
+{{ partial "footer.html" . }}
+{{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{ if fileExists "static/js/go.js" }}<script src="{{ partial "rel.html" "js/go.js" }}" defer></script>{{ end }}
+</body>
+</html>

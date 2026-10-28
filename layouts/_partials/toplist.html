@@ -1,0 +1,33 @@
+<section class="toplist wrap" aria-label="{{ i18n "top_label" }}">
+  <ol class="cards">
+  {{ $cards := index hugo.Data.cards site.Language.Lang | default (index hugo.Data.cards "en") }}
+  {{ range $i, $b := hugo.Data.brands }}
+    {{ $pos := add $i 1 }}
+    {{ $c := index $cards $b.slug }}
+    {{ $review := partial "url.html" $b.slug }}
+    <li class="card{{ if le $pos 3 }} card--top card--p{{ $pos }}{{ end }}" id="card-{{ $b.anchor }}">
+      <div class="card__rank" aria-label="#{{ $pos }}">{{ $pos }}</div>
+      <div class="card__logo">
+        <span class="card__initials" aria-hidden="true">{{ substr $b.name 0 2 }}</span>
+        <img src="{{ partial "rel.html" $b.logo }}" alt="{{ $b.name }} logo" loading="lazy" width="120" height="60" onerror="this.remove()">
+      </div>
+      <div class="card__title">
+        <h3 class="card__name">{{ $b.name }}</h3>
+        <div class="stars" role="img" aria-label="{{ $b.rating }} / 5">
+          <span class="stars__bg">★★★★★</span><span class="stars__fg" style="width:{{ mul (div $b.rating 5.0) 100 }}%">★★★★★</span>
+          <b>{{ $b.rating }}</b>
+        </div>
+      </div>
+      <dl class="card__stats">
+        {{ with $c.min }}<div><dt>{{ i18n "min_deposit" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+        {{ with $c.max }}<div><dt>{{ i18n "max_deposit" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+        {{ with $c.bonus }}<div class="card__bonus"><dt>{{ i18n "bonus" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+      </dl>
+      <div class="card__actions">
+        <a href="#{{ $b.anchor }}" class="btn btn--play" rel="nofollow sponsored noopener" data-secure-link>{{ i18n "play_now" }}</a>
+        <a href="{{ $review }}" class="btn btn--ghost">{{ i18n "read_review" }}</a>
+      </div>
+    </li>
+  {{ end }}
+  </ol>
+</section>

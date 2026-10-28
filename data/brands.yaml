@@ -1,0 +1,16 @@
+# Порядок = место в топе. Тексты карточек (депозит, бонус) — data/cards/<язык>.yaml
+- {slug: amunra,      name: AmunRa,      anchor: amunra,      logo: /images/amunra-logo.png,                     rating: 4.2}
+- {slug: robocat,     name: RoboCat,     anchor: robocat,     logo: /images/robocat-logo.jfif,                   rating: 4.6}
+- {slug: sultanbet,   name: Sultanbet,   anchor: sultanbet,   logo: /images/sultanbet-logo.jfif,                 rating: 4.3}
+- {slug: tikitaka,    name: Tikitaka,    anchor: tikitaka,    logo: /images/tikitaka-logo.png,                   rating: 4.1}
+- {slug: 10bet,       name: 10bet,       anchor: 10bet,       logo: /images/casinos/10bet-logo.jfif,             rating: 4.6}
+- {slug: lunubet,     name: Lunubet,     anchor: lunubet,     logo: /images/lunubet-logo.webp,                   rating: 4.2}
+- {slug: wildsino,    name: Wildsino,    anchor: wildsino,    logo: /images/casinos/wildsino-logo.png,           rating: 4.2}
+- {slug: sportcenter-betting, name: SportCenter, anchor: sportcenter, logo: /images/casinos/sportcenter-betting.webp, rating: 4.4}
+- {slug: betwinner,   name: Betwinner,   anchor: betwinner,   logo: /images/betwinner-logo.png,                  rating: 4.7}
+- {slug: 888starz,    name: 888starz,    anchor: 888starz,    logo: /images/casinos/888starz-logo.webp,          rating: 4.7}
+- {slug: megapari,    name: Megapari,    anchor: megapari,    logo: /images/casinos/megapari-logo.jfif,          rating: 4.5}
+- {slug: melbet,      name: Melbet,      anchor: melbet,      logo: /images/casinos/melbet-logo.png,             rating: 4.4}
+- {slug: spinbetter,  name: Spinbetter,  anchor: spinbetter,  logo: /images/casinos/spinbetter-logo.png,         rating: 4.3}
+- {slug: dreambet,    name: Dream.bet,   anchor: dreambet,    logo: /images/casinos/dreambet-logo.webp,          rating: 4.8}
+- {slug: 1xbet,       name: 1xbet,       anchor: 1xbet,       logo: /images/casinos/1xbet-logo.png,              rating: 4.8}

@@ -1,0 +1,3 @@
+{{- /* URL страницы по slug: та же страница на текущем языке, если есть; иначе английская /slug/ */ -}}
+{{- $p := site.GetPage (printf "/%s" .) -}}
+{{- if $p -}}{{- return $p.RelPermalink -}}{{- else -}}{{- return (relURL (printf "%s/" .)) -}}{{- end -}}

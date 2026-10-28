@@ -1,0 +1,33 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero__bg" style="background-image:url('{{ partial "rel.html" site.Params.heroImage }}')" aria-hidden="true"></div>
+  <div class="hero__inner">
+    {{ with .Params.hero_kicker }}<p class="hero__kicker"><span class="dot" aria-hidden="true"></span>{{ . }}</p>{{ end }}
+    <h1 class="hero__title">{{ .Params.h1 }}</h1>
+    {{ with hugo.Data.authors }}{{ with index . $.Params.author }}
+    <p class="hero__meta">{{ i18n "reviewed_by" }} <a href="{{ partial "rel.html" .url }}">{{ .name }}</a> · {{ i18n "updated" }} <time datetime="{{ $.Lastmod.Format "2006-01-02" }}">{{ $.Lastmod | time.Format ":date_medium" }}</time></p>
+    {{ end }}{{ end }}
+    <ul class="hero__stats">
+      <li><strong>50+</strong><span>{{ i18n "stat_tested" }}</span></li>
+      <li><strong>200+</strong><span>{{ i18n "stat_hours" }}</span></li>
+      <li><strong>15</strong><span>{{ i18n "stat_ranked" }}</span></li>
+    </ul>
+    {{ with .Params.hero_cta }}<a href="#{{ $.Params.hero_cta_target }}" class="btn btn--play btn--lg" rel="nofollow sponsored noopener" data-secure-link>{{ . }}<span aria-hidden="true" class="arrow">→</span></a>{{ end }}
+  </div>
+</section>
+
+{{ partial "toplist.html" . }}
+
+<div class="wrap content-grid">
+  {{ with .TableOfContents }}{{ if gt (len .) 40 }}
+  <nav class="toc" aria-label="{{ i18n "on_page" }}">
+    <p class="toc__title">{{ i18n "on_page" }}</p>
+    {{ . }}
+  </nav>
+  {{ end }}{{ end }}
+  <article class="prose">
+    {{ .Content }}
+    {{ partial "faq.html" . }}
+  </article>
+</div>
+{{ end }}

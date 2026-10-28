@@ -1,0 +1,16 @@
+# Тексты карточек топа. Ключ = slug из data/brands.yaml. max — необязательно.
+amunra:      {min: "40 AED سے (ای والٹ) / 75 AED (کارڈ)", bonus: "100% تک EUR 500 + 200 فری اسپنز (شرائط لاگو)"}
+robocat:     {min: "40 AED (کرپٹو) / 80 AED (فیاٹ)", bonus: "ویلکم بونس: 100% تک 2,000 AED + 200 فری اسپنز"}
+sultanbet:   {min: "$20 سے (ای والٹ) / $20 (کارڈ)", bonus: "150% تک $1,000 + 200 فری اسپنز (شرائط لاگو)"}
+tikitaka:    {min: "€10 / $10 سے", max: "€5,000 فی ٹرانزیکشن", bonus: "100% تک €500 + 200 فری اسپنز + Bonus Crab (شرائط لاگو)"}
+10bet:       {min: "37 AED", max: "36,725 AED", bonus: "100% اسپورٹس بونس، 185 AED تک"}
+lunubet:     {min: "€20 سے (فیاٹ) / €30 (Bitcoin)", max: "€5,000 فی ٹرانزیکشن", bonus: "100% تک €500 + 200 فری اسپنز + Bonus Crab (شرائط لاگو)"}
+wildsino:    {min: "73 AED", max: "14,690 AED", bonus: "خصوصی پیکج: 1,835 AED"}
+sportcenter-betting: {min: "€10", bonus: "اسپورٹس ویلکم بونس: 100% تک €100"}
+betwinner:   {min: "50 AED", bonus: "ویلکم بونس: 100% تک 4,000 AED"}
+888starz:    {min: "1 AED", max: "2,940 AED", bonus: "200% تک 1,470 AED حاصل کریں"}
+megapari:    {min: "4 AED", max: "18,362 AED", bonus: "پہلے ڈپازٹ پر 100% تک 735 AED"}
+melbet:      {min: "4 AED", max: "18,362 AED", bonus: "550 AED تک + 3% ہفتہ وار کیش بیک"}
+spinbetter:  {min: "4 AED", max: "18,362 AED", bonus: "اسپورٹس ویلکم پیک: 370 AED"}
+dreambet:    {min: "€10", bonus: "کیسینو بونس: 100% تک €200 | اسپورٹس بونس: 100% تک €100"}
+1xbet:       {min: "5 AED", max: "18,362 AED", bonus: "ویلکم بونس: 100% تک 500 AED"}

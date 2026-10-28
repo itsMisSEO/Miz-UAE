@@ -1,0 +1,16 @@
+# Тексты карточек топа. Ключ = slug из data/brands.yaml. max — необязательно.
+amunra:      {min: "From 40 AED (e-wallet) / 75 AED (cards)", bonus: "100% up to EUR 500 + 200 Free Spins (terms apply)"}
+robocat:     {min: "40 AED (crypto) / 80 AED (fiat)", bonus: "Welcome Bonus: 100% up to 2,000 AED + 200 Free Spins"}
+sultanbet:   {min: "From $20 (e-wallet) / $20 (cards)", bonus: "150% up to $1,000 + 200 Free Spins (terms apply)"}
+tikitaka:    {min: "From €10 / $10", max: "€5,000 per transaction", bonus: "100% up to €500 + 200 Free Spins + Bonus Crab (terms apply)"}
+10bet:       {min: "37 AED", max: "36,725 AED", bonus: "100% sports bonus up to 185 AED"}
+lunubet:     {min: "From €20 (fiat) / €30 (Bitcoin)", max: "€5,000 per transaction", bonus: "100% up to €500 + 200 Free Spins + Bonus Crab (terms apply)"}
+wildsino:    {min: "73 AED", max: "14,690 AED", bonus: "Exclusive package: 1,835 AED"}
+sportcenter-betting: {min: "€10", bonus: "Sports Welcome Bonus: 100% up to €100"}
+betwinner:   {min: "50 AED", bonus: "Welcome Bonus: 100% up to 4,000 AED"}
+888starz:    {min: "1 AED", max: "2,940 AED", bonus: "Claim 200% up to 1,470 AED"}
+megapari:    {min: "4 AED", max: "18,362 AED", bonus: "100% first deposit up to 735 AED"}
+melbet:      {min: "4 AED", max: "18,362 AED", bonus: "Up to 550 AED + 3% weekly cashback"}
+spinbetter:  {min: "4 AED", max: "18,362 AED", bonus: "Sports welcome pack: 370 AED"}
+dreambet:    {min: "€10", bonus: "Casino Bonus: 100% up to €200 | Sports Bonus: 100% up to €100"}
+1xbet:       {min: "5 AED", max: "18,362 AED", bonus: "Welcome Bonus: 100% up to 500 AED"}

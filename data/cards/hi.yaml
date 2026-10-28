@@ -1,0 +1,15 @@
+amunra:      {min: "40 AED से (ई-वॉलेट) / 75 AED से (कार्ड)", bonus: "100% तक EUR 500 + 200 फ्री स्पिन (शर्तें लागू)"}
+robocat:     {min: "40 AED (क्रिप्टो) / 80 AED (फ़िएट)", bonus: "वेलकम बोनस: 100% तक 2,000 AED + 200 फ्री स्पिन"}
+sultanbet:   {min: "$20 से (ई-वॉलेट) / $20 से (कार्ड)", bonus: "150% तक $1,000 + 200 फ्री स्पिन (शर्तें लागू)"}
+tikitaka:    {min: "€10 / $10 से", max: "प्रति ट्रांज़ैक्शन €5,000", bonus: "100% तक €500 + 200 फ्री स्पिन + Bonus Crab (शर्तें लागू)"}
+10bet:       {min: "37 AED", max: "36,725 AED", bonus: "100% स्पोर्ट्स बोनस, 185 AED तक"}
+lunubet:     {min: "€20 से (फ़िएट) / €30 से (Bitcoin)", max: "प्रति ट्रांज़ैक्शन €5,000", bonus: "100% तक €500 + 200 फ्री स्पिन + Bonus Crab (शर्तें लागू)"}
+wildsino:    {min: "73 AED", max: "14,690 AED", bonus: "एक्सक्लूसिव पैकेज: 1,835 AED"}
+sportcenter-betting: {min: "€10", bonus: "स्पोर्ट्स वेलकम बोनस: 100% तक €100"}
+betwinner:   {min: "50 AED", bonus: "वेलकम बोनस: 100% तक 4,000 AED"}
+888starz:    {min: "1 AED", max: "2,940 AED", bonus: "200% तक 1,470 AED पाएं"}
+megapari:    {min: "4 AED", max: "18,362 AED", bonus: "पहले डिपॉज़िट पर 100% तक 735 AED"}
+melbet:      {min: "4 AED", max: "18,362 AED", bonus: "550 AED तक + 3% साप्ताहिक कैशबैक"}
+spinbetter:  {min: "4 AED", max: "18,362 AED", bonus: "स्पोर्ट्स वेलकम पैक: 370 AED"}
+dreambet:    {min: "€10", bonus: "कैसीनो बोनस: 100% तक €200 | स्पोर्ट्स बोनस: 100% तक €100"}
+1xbet:       {min: "5 AED", max: "18,362 AED", bonus: "वेलकम बोनस: 100% तक 500 AED"}

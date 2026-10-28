@@ -1,0 +1,10 @@
+{{ with index hugo.Data.authors (.Params.author | default "omar") }}
+<aside class="author">
+  <span class="author__avatar" aria-hidden="true"><span>{{ substr .name 0 1 }}</span><img src="{{ partial "rel.html" .image }}" alt="" width="64" height="64" loading="lazy" onerror="this.remove()"></span>
+  <div>
+    <a class="author__name" href="{{ partial "rel.html" .url }}">{{ .name }}</a>
+    <span class="author__role">{{ i18n "author_role" }}</span>
+    <p class="author__desc">{{ i18n "author_desc" }}</p>
+  </div>
+</aside>
+{{ end }}
